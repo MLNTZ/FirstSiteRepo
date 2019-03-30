@@ -2,8 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <style>
+
+    </style>
     <title> HTML Cheat Sheet </title>
   </head>
+  <body>
     <h1> Yo wus good </h1>
     <h2> Yo wus good</h2>
     <h3> Yo wus good</h3>
@@ -22,7 +26,7 @@
     </ul>
 
     <ol>
-      <li> List 1</li>
+      <li id=blogLink><a href="blog.html">Check out the blog</a></li>
       <li> List 2</li>
       <li> List 3</li>
       <li> List 4</li>
@@ -51,11 +55,79 @@
         </tr>
       </tbody>
     </table>
-    <div style="margin-top:500px"></div>
+    <div style="margin-top:100px"></div>
+    <hr>
 
+    <!--Forms-->
+    <form  action="process.php" method="post">
+      <div>
+        <label>First Name</label>
+          <input type="text" name="firstName" placeholder="enter first name">
+      </div>
+      <br>
 
+      <div class="">
+        <label>Last Name</label>
+        <input type="text" name="lastName" value="">
+      </div>
+      <br>
 
-  <body>
+      <div class="">
+        <label for="">Email</label>
+        <input type="email" name="email" value="">
+      </div>
+      <br>
+
+      <div class="">
+        <label for="">Message</label>
+        <textarea name="message" rows="4" cols="40"></textarea>
+      </div>
+      <br>
+
+      <div class="">
+          <label for="">Gender</label>
+          <select class="" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+      </div>
+      <br>
+
+      <div class="">
+        <label for="">Age</label>
+        <input type="number" name="age" value="30">
+      </div>
+      <br>
+
+      <div class="">
+        <label for="">Birthday</label>
+        <input type="date" name="birthday" value="">
+      </div>
+      <br>
+      <input type="submit" name="submit" value="Submit"> <!-- NOTE: Will submit to 'process.php' -->
+    </form>
+    <br>
+    <div>
+    <!-- button -->
+    <button type="button" name="button">Click me</button>
+  </div>
+  <br>
+
+    <a href="Designs/AlphaSigPic1.png">
+    <img src="Designs/AlphaSigPic1.png" alt="Sample Image" width="400px">
+    </a>
+    <div style="margin-top:100px"></div>
+
+    <!-- Qutotations -->
+    <blockquote cite="OtherSite.html">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </blockquote>
+
+    <p>The <abbr title="World Wide Web">WWW</abbr> is awesome</p>
+
+    <p>The big <cite>Yeet</cite></p>
+
 
 
   </body>
